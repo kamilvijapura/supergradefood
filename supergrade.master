@@ -1,0 +1,573 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="supergrade.master.cs" Inherits="supergrade" %>
+
+<!DOCTYPE aspx>
+
+<aspx>
+<head runat="server">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+<title>Supergrade Food | Oil Mill | Vijapur Highway</title>
+<meta name="keywords" content="HTML5 Template" />
+<meta name="description" content="Panda - Ultimate eCommerce Template">
+<meta name="author" content="D-THEMES">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+  
+<link rel="icon" type="image/icon" href="images/favicon.ico">
+<link rel="preload" href="vendor/fontawesome-free/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="vendor/fontawesome-free/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<script>
+        WebFontConfig = {
+            google: { families: [ 'Josefin Sans:300,400,600,700' ] }
+        };
+        ( function ( d ) {
+            var wf = d.createElement( 'script' ), s = d.scripts[ 0 ];
+            wf.src = 'js/webfont.js';
+            wf.async = true;
+            s.parentNode.insertBefore( wf, s );
+        } )( document );
+    </script>
+<link rel="stylesheet" type="text/css" href="vendor/fontawesome-free/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="vendor/animate/animate.min.css">
+
+<link rel="stylesheet" type="text/css" href="vendor/owl-carousel/owl.carousel.min.css">
+<link rel="stylesheet" type="text/css" href="vendor/magnific-popup/magnific-popup.min.css">
+
+<link rel="stylesheet" type="text/css" href="css/demo1.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+<body>
+    
+  <div class="page-wrapper">
+<header class="header">
+<!-- <div class="header-top">
+<div class="container">
+<div class="header-left">
+<a href="tel:#" class="call">
+<i class="p-icon-phone-solid"></i>
+<span>+456 789 000</span>
+</a>
+<span class="divider"></span>
+<a href="contact.aspx" class="contact">
+<i class="p-icon-map"></i>
+<span>25 West 21th STREET, Miami FL, USA</span>
+</a>
+</div>
+<div class="header-right">
+<div class="dropdown switcher">
+<a href="#currency">USD</a>
+<ul class="dropdown-box">
+<li><a href="#USD">USD</a></li>
+<li><a href="#EUR">EUR</a></li>
+</ul>
+</div>
+
+<div class="dropdown switcher">
+<a href="#language"><img src="images/flagus.jpg" width="14" height="10" class="mr-1" alt="flagus">ENG</a>
+<ul class="dropdown-box">
+<li>
+<a href="#USD"><img src="images/flagus.jpg" width="14" height="10" class="mr-1" alt="flagus">ENG</a>
+</li>
+<li>
+<a href="#EUR"><img src="images/flagfr.jpg" width="14" height="10" class="mr-1" alt="flagfr">FRH</a>
+</li>
+</ul>
+</div>
+<span class="divider"></span>
+
+<div class="social-links">
+<a href="#" class="social-link fab fa-facebook-f" title="Facebook"></a>
+<a href="#" class="social-link fab fa-twitter" title="Twitter"></a>
+<a href="#" class="social-link fab fa-pinterest" title="Pinterest"></a>
+<a href="#" class="social-link fab fa-linkedin-in" title="Linkedin"></a>
+</div>
+
+</div>
+</div>
+</div> -->
+
+<div class="header-middle has-center sticky-header fix-top sticky-content" style="height:94px;">
+<div class="container">
+<div class="header-left">
+
+<a href="demo1.aspx" class="logo">
+<img class="main-logo" src="images/logo.png" alt="logo">
+</a>
+</div>
+<div class="header-right">
+<a href="#" class="mobile-menu-toggle" title="Mobile Menu">
+    <i class="p-icon-bars-solid"></i>
+    </a>
+</div>
+</div>
+<div class="header-center">
+<nav class="main-nav">
+<ul class="menu">
+<li class="active">
+<a href="index.aspx">Home</a>
+</li>
+<li><a href="about.aspx">About</a></li>
+<li>
+<a href="shop.aspx">Shop</a>
+
+</li>
+
+       
+<li>
+<a href="gallery.aspx">Gallery</a>
+
+</li>
+<li><a href="contact.aspx">Contact </a></li>
+    <li><a class="btn-distribut" href="distributor.aspx">Distributorship</a></li>
+
+</ul>
+</nav>
+</div>
+<!-- <div class="header-right">
+<div class="header-search hs-toggle">
+<a class="search-toggle" href="#" title="Search">
+<i class="p-icon-search-solid"></i>
+</a>
+<form action="#" class="form-simple">
+<input type="search" autocomplete="off" placeholder="Search in..." required>
+<button class="btn btn-search" type="submit">
+<i class="p-icon-search-solid"></i>
+</button>
+</form>
+</div>
+<div class="dropdown login-dropdown off-canvas">
+<a class="login-toggle" href="ajax/login.aspx" data-toggle="login-modal">
+<span class="sr-only">login</span>
+<i class="p-icon-user-solid"></i>
+</a>
+
+<div class="canvas-overlay"></div>
+<a href="#" class="btn-close"></a>
+<div class="dropdown-box scrollable">
+<div class="login-popup">
+<div class="form-box">
+<div class="tab tab-nav-underline tab-nav-boxed">
+ <ul class="nav nav-tabs nav-fill mb-4">
+<li class="nav-item">
+<a class="nav-link active lh-1 ls-normal" href="#signin">Login</a>
+</li>
+<li class="nav-item">
+<a class="nav-link lh-1 ls-normal" href="#register">Register</a>
+</li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane active" id="signin">
+<form action="#">
+<div class="form-group">
+<input type="text" id="singin-email" name="singin-email" placeholder="Username or Email Address" required="">
+<input type="password" id="singin-password" name="singin-password" placeholder="Password" required="">
+</div>
+<div class="form-footer">
+<div class="form-checkbox">
+<input type="checkbox" id="signin-remember" name="signin-remember">
+<label for="signin-remember">Remember
+me</label>
+</div>
+<a href="#" class="lost-link">Lost your password?</a>
+</div>
+<button class="btn btn-dark btn-block" type="submit">Login</button>
+</form>
+<div class="form-choice text-center">
+<label>or Login With</label>
+<div class="social-links social-link-active ">
+<a href="#" title="Facebook" class="social-link social-facebook fab fa-facebook-f"></a>
+<a href="#" title="Twitter" class="social-link social-twitter fab fa-twitter"></a>
+<a href="#" title="Linkedin" class="social-link social-linkedin fab fa-linkedin-in"></a>
+</div>
+</div>
+</div>
+<div class="tab-pane" id="register">
+<form action="#">
+<div class="form-group">
+<input type="text" id="register-user" name="register-user" placeholder="Username" required="">
+<input type="email" id="register-email" name="register-email" placeholder="Your Email Address" required="">
+<input type="password" id="register-password" name="register-password" placeholder="Password" required="">
+</div>
+<div class="form-footer mb-5">
+<div class="form-checkbox">
+<input type="checkbox" id="register-agree" name="register-agree" required="">
+<label for="register-agree">I
+agree to the
+privacy policy</label>
+</div>
+</div>
+<button class="btn btn-dark btn-block" type="submit">Register</button>
+</form>
+<div class="form-choice text-center">
+<label class="ls-m">or Register With</label>
+<div class="social-links social-link-active ">
+<a href="#" title="Facebook" class="social-link social-facebook fab fa-facebook-f"></a>
+<a href="#" title="Twitter" class="social-link social-twitter fab fa-twitter"></a>
+<a href="#" title="Linkedin" class="social-link social-linkedin fab fa-linkedin-in"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<button title="Close (Esc)" type="button" class="mfp-close"><span>×</span></button>
+</div>
+</div>
+
+</div>
+<a href="wishlist.aspx" class="wishlist wishlist-toggle" title="Wishlist">
+<i class="p-icon-heart-solid"></i>
+</a>
+<div class="dropdown cart-dropdown off-canvas mr-0 mr-lg-2">
+<a href="#" class="cart-toggle link">
+<i class="p-icon-cart-solid">
+<span class="cart-count">2</span>
+</i>
+</a>
+<div class="canvas-overlay"></div>
+<div class="dropdown-box">
+<div class="canvas-header">
+<h4 class="canvas-title">Shopping Cart</h4>
+ <a href="#" class="btn btn-dark btn-link btn-close">close<i class="p-icon-arrow-long-right"></i><span class="sr-only">Cart</span></a>
+</div>
+<div class="products scrollable">
+<div class="product product-mini">
+<figure class="product-media">
+<a href="product-simple.aspx">
+<img src="images/cart/product-1.jpg" alt="product" width="84" height="105" />
+</a>
+<a href="#" title="Remove Product" class="btn-remove">
+<i class="p-icon-times"></i><span class="sr-only">Close</span>
+</a>
+</figure>
+<div class="product-detail">
+<a href="product.aspx" class="product-name">Peanuts</a>
+<div class="price-box">
+<span class="product-quantity">7</span>
+<span class="product-price">$12.00</span>
+</div>
+</div>
+</div>
+
+<div class="product product-mini">
+<figure class="product-media">
+<a href="product-simple.aspx">
+<img src="images/cart/product-2.jpg" alt="product" width="84" height="105" />
+</a>
+<a href="#" title="Remove Product" class="btn-remove">
+<i class="p-icon-times"></i><span class="sr-only">Close</span>
+</a>
+</figure>
+<div class="product-detail">
+<a href="product.aspx" class="product-name">Prime Beef</a>
+<div class="price-box">
+<span class="product-quantity">4</span>
+<span class="product-price">$16.00</span>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="cart-total">
+<label>Subtotal:</label>
+<span class="price">$148.00</span>
+</div>
+
+<div class="cart-action">
+<a href="cart.aspx" class="btn btn-outline btn-dim mb-2">View
+Cart</a>
+<a href="checkout.aspx" class="btn btn-dim"><span>Go To Checkout</span></a>
+</div>
+
+</div>
+
+</div>
+</div> -->
+</div>
+    </header>
+</div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    
+  
+<footer class="footer">
+<div class="container">
+<div class="footer-top">
+<ul class="menu menu-type2">
+<li>
+<a href="index.aspx">Home</a>
+</li>
+<li>
+<a href="about.aspx">About us</a>
+</li>
+<li>
+<a href="shop.aspx">Shop</a>
+</li>
+<li>
+<a href="gallery.aspx">Gallery</a>
+</li>
+<li>
+<a href="contact.aspx">contact us</a>
+</li>
+     
+</ul>
+</div>
+
+<div class="footer-middle">
+<div class="footer-left">
+<ul class="widget-body">
+<li>
+<a href="tel:+91 72658 02892" class="footer-icon-box">
+<i class="p-icon-phone-solid"></i>
+<span>+91 72658 02892</span>
+</a>
+</li>
+<li>
+<a href="https://goo.gl/maps/qwTS5kuiDodzyEZE9" class="">
+<i class="p-icon-map"></i>
+<span>SUPERONE OIL MILL,<br /> Himatnagar - Vijapur Highway,<br /> Himatnagar, Gujarat</span>
+</a>
+</li>
+<li>
+<i class="p-icon-message"></i>
+<span><a href="mailto:info@supergradefood.in">info@supergradefood.in</a></span>
+</li>
+<li>
+<a href="#" class="">
+<i class="p-icon-clock"></i>
+<span>Mon-Sat: 10:00 - 7:00</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="footer-center">
+<a href="index.aspx" class="logo-footer">
+<img src="images/logo.png" alt="logo-footer" width="171" height="41">
+</a>
+<div class="social-links">
+<a href="https://www.facebook.com/people/S1-Supergrade-Food/100091623482431/?mibextid=ZbWKwL" class="social-link fab fa-facebook-f" title="Facebook" target="_blank"></a>
+<a href="https://twitter.com/sahal_masu?t=9fNGDp-EkeoVPVi4Nf53mw&s=09" class="social-link fab fa-twitter" title="Twitter" target="_blank"></a>
+<a href="https://wa.me/917265802892" class="social-link fab fa-whatsapp" title="Whatsapp" style="font-weight:bold;" target="_blank"></a>
+<a href="https://www.instagram.com/s1supergradefood/" class="social-link fab fa-instagram" style="font-weight:bold;" title="Instagram" target="_blank"></a>
+</div>
+
+</div>
+<div class="footer-right">
+<div class="widget-newsletter">
+<h4 class="widget-title">Subscribe Newsletter</h4>
+<p>Subscribe to the Panda eCommerce Newsletter<br> updates from your favourite products.
+</p>
+<form action="#" class="form-simple">
+<input type="email" name="email" id="email" placeholder="Email address here..." required="">
+<button class="btn btn-link" type="submit">sign up</button>
+</form>
+</div>
+</div>
+</div>
+
+<div class="footer-bottom">
+<p class="copyright">Super Grade Food © 2022. All Rights Reserved</p>
+<figure>
+<p class="copyright">Designed & Developed By <a class="vit" style="color:red;" href="#">Vijapura Infotech</a></p>
+</figure>
+</div>
+
+</div>
+</footer>
+
+</div>
+
+
+
+<a id="scroll-top" class="scroll-top" href="#top" title="Top" role="button"> <i class="p-icon-arrow-up"></i>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70">
+<circle id="progress-indicator" fill="transparent" stroke="#000000" stroke-miterlimit="10" cx="35" cy="35" r="34" style="stroke-dasharray: 108.881, 400;"></circle>
+</svg>
+</a>
+
+<div class="mobile-menu-wrapper">
+<div class="mobile-menu-overlay">
+ </div>
+
+<a class="mobile-menu-close" href="#"><i class="p-icon-times"></i></a>
+
+<div class="mobile-menu-container scrollable">
+<form action="#" class="inline-form">
+<input type="search" name="search" autocomplete="off" placeholder="Search your keyword..." required />
+<button class="btn btn-search" type="submit">
+<i class="p-icon-search-solid"></i>
+</button>
+</form>
+
+<ul class="mobile-menu mmenu-anim">
+    <li>
+        <a href="index.aspx">Home</a>
+        </li>
+        <li><a href="about.aspx">About</a></li>
+        <li>
+        <a href="shop.aspx">Shop</a>
+        
+        </li>
+        
+               
+        <li>
+        <a href="gallery.aspx">Gallery</a>
+        
+        </li>
+        <li><a href="contact.aspx">Contact </a></li>
+    <li><a class="btn-distribut" href="distributor.aspx">Distributorship</a></li>
+</ul>
+
+</div>
+</div>
+<div class="newsletter-popup mfp-hide" id="newsletter-popup">
+<figure>
+<img src="images/newsletter-popup.jpg" width="500" height="269" alt="newsletter">
+</figure>
+<div class="newsletter-content">
+<h3>Join Our Mailing List</h3>
+<p>Stay informed! Monthly tips and discount.</p>
+<form action="#" method="get" class="inline-form mx-auto">
+<input type="email" name="email" id="email2" placeholder="Email address here..." required="">
+<button class="btn btn-dark" type="submit">SUBMIT</button>
+</form>
+<div class="form-checkbox">
+<input type="checkbox" id="hide-newsletter-popup" name="hide-newsletter-popup" required="">
+<label for="hide-newsletter-popup">Don't show this popup again</label>
+</div>
+<div class="social-links">
+<a href="#" title="facebook" class="social-link fab fa-facebook-f"></a>
+<a href="#" title="twitter" class="social-link fab fa-twitter"></a>
+<a href="#" title="whatsapp" class="social-link fa fa-whatsapp"></a>
+<a href="#" title="linkedin" class="social-link fab fa-linkedin-in"></a>
+</div>
+</div>
+</div>
+<script>const container = document.querySelector('.slide-container');
+    const slides = document.querySelectorAll('.slide');
+    const btns = document.querySelectorAll('.btn');
+    const btnPrev = document.querySelector('.btn-prev');
+    const btnNext = document.querySelector('.btn-next');
+
+    const n = slides.length;
+    const angle = 360 / n;
+
+    let setId = 0;
+    let deg = [];
+    let x = 0;
+    let y = 0;
+
+    const touchDevice = () => ('ontouchstart' in document.documentElement);
+    const setTransition = (time) => {
+        let i = 0;
+        for (; i < n; i++) slides[i].style.transition = `all ${time}s`;
+    }
+    const positionSlides = () => {
+        const r = container.offsetWidth / 2;
+        let i = 0;
+
+        setTransition('0');
+
+        for (; i < n; i++) {
+            deg[i] = i * angle;
+            x = Math.cos(deg[i] * (Math.PI / 180)) * r + r;
+            y = Math.sin(deg[i] * (Math.PI / 180)) * r + r;
+
+            slides[i].style.top = `${~~y}px`;
+            slides[i].style.left = `${~~x}px`;
+        }
+
+        setTimeout(() => {
+            setTransition('.3');
+        }, 10);
+    }
+    const prevSlide = () => {
+        let i = 0;
+        for (; i < n; i++) deg[i] -= angle;
+        animateSlide();
+    }
+    const nextSlide = () => {
+        let i = 0;
+        for (; i < n; i++) deg[i] += angle;
+        animateSlide();
+    }
+    const animateSlide = () => {
+        const r = container.offsetWidth / 2;
+        let i = 0;
+
+        for (; i < n; i++) {
+            x = Math.cos(deg[i] * (Math.PI / 180)) * r + r;
+            y = Math.sin(deg[i] * (Math.PI / 180)) * r + r;
+
+            slides[i].style.top = `${~~y}px`;
+            slides[i].style.left = `${~~x}px`;
+
+            y === 0 ? slides[i].classList.add('active') : slides[i].classList.remove('active');
+        }
+
+        const activeSlide = document.querySelector('.slide.active');
+        const slideBgImg = getComputedStyle(activeSlide).backgroundImage;
+
+        container.style.backgroundImage = slideBgImg;
+    }
+    const autoPlay = () => setId = setInterval(nextSlide, 3000);
+    const changeSlideImg = (e) => {
+        let i = 0;
+        for (; i < n; i++) slides[i].classList.remove('active');
+        e.currentTarget.classList.add('active');
+
+        const activeSlide = document.querySelector('.slide.active');
+        const slideBgImg = getComputedStyle(activeSlide).backgroundImage;
+
+        container.style.backgroundImage = slideBgImg;
+    }
+
+    positionSlides();
+    nextSlide();
+    autoPlay();
+
+    btnPrev.addEventListener('click', prevSlide);
+    btnNext.addEventListener('click', nextSlide);
+    btns.forEach(btn => {
+        btn.addEventListener('mouseenter', () => clearInterval(setId));
+        btn.addEventListener('mouseleave', () => {
+            clearInterval(setId);
+            autoPlay();
+        });
+    })
+    slides.forEach(slide => {
+        if (touchDevice()) {
+            slide.addEventListener('click', (e) => {
+                changeSlideImg(e);
+                clearInterval(setId);
+                autoPlay();
+            });
+        }
+        else {
+            slide.addEventListener('mouseenter', (e) => {
+                changeSlideImg(e);
+                clearInterval(setId);
+            });
+            slide.addEventListener('mouseleave', () => {
+                clearInterval(setId);
+                autoPlay();
+            });
+        }
+    })
+    window.addEventListener('resize', () => {
+        clearInterval(setId);
+        positionSlides();
+        autoPlay();
+    })</script>
+<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/owl-carousel/owl.carousel.min.js"></script>
+<script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="vendor/elevatezoom/jquery.elevatezoom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script> 
+<script src="js/main.js"></script>  
+</body>
+</aspx>

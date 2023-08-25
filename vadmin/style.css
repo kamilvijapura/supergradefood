@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap');
+
+
+.card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 300px;
+max-width:100%;
+  background: #f2f2f2;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+ 
+}
+.logo {
+    text-align: center;
+}
+.logo img{
+    padding: 5px;
+}
+.icon {
+  max-width: 50%;
+  border-radius: 50%;
+}
+ul.icon-tag {
+  list-style: none;
+}
+li {
+  margin: 6px;
+  font-size: 25px;
+}
+i.fa.fa-envelope {
+  padding: 9px;
+  font-size: 20px;
+  background: #0f355b;
+  color: #ffffff;
+  
+  box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+}
+i.fa.fa-envelope:hover{
+  background-color:#2ea2db;
+  color:#0f355b;
+}
+i.fa.fa-phone {
+  padding: 11px;
+  color: #ffffff;
+  font-size: 20px;
+  background: #0f355b;
+ 
+  box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+}
+i.fa.fa-phone:hover{
+  background-color:#2ea2db;
+  color:#0f355b;
+}
+ul.social-media {
+  display: flex;
+  list-style: none;
+
+}
+a.mail {
+  text-decoration: none;
+  color: #0f355b;
+  font-family: system-ui;
+}
+a.mobile {
+  text-decoration: none;
+  color:#0f355b;
+  font-family: system-ui;
+}
+i.fa.fa-linkedin.icon-1 {
+  background: #0f355b;
+  padding: 10px;
+  font-size: 20px;
+  box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+  color: #ffffff;
+}
+i.fa.fa-linkedin.icon-1:hover{
+  background-color:#2ea2db;
+  color:#0f355b;
+}
+i.fa.fa-facebook.icon-2 {
+  background: #0f355b;
+  padding: 10px 13px;
+ 
+  font-size: 20px;
+  box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+  color: #ffffff;
+}
+i.fa.fa-facebook.icon-2:hover{
+  background-color:#2ea2db;
+  color:#0f355b;
+}
+i.fa.fa-instagram.icon-3{
+  background: #0f355b;
+  padding: 10px;
+ 
+  font-size: 20px;
+  box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+  color: #ffffff;
+}
+i.fa.fa-instagram.icon-3:hover{
+  background-color:#2ea2db;
+  color:#0f355b;
+}
+i.fa.fa-whatsapp.icon-4{
+  background: #0f355b;
+  padding: 10px;
+  
+  font-size: 20px;
+  box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+  color: #ffffff;
+}
+i.fa.fa-whatsapp.icon-4:hover{
+  background-color:#2ea2db;
+  color:#0f355b;
+}
+a.backtohome {
+    font-size: 16px;
+    /* position: relative; */
+    position: relative;
+    top: 40px;
+    margin-left: 40px;
+    text-decoration: none;
+}
+@media(max-width:768px){
+    a.backtohome {
+        font-size: 10px;
+        /* position: relative; */
+        top: 10px;
+        position:relative;
+        margin-left:28px;
+        text-decoration: none;
+    }
+}
